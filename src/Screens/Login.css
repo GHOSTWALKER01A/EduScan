@@ -1,0 +1,151 @@
+:root{
+    --bg-primary: #0A2239;
+    --bg-secondary: #153A66;
+    --text-primary: #FFFFFF;
+    --text-secondary: #A3BFFA;
+    --accent: #F5DEB3;
+    --card-bg: #1E3A8A;
+    --shadow: rgba(0, 0, 0, 0.3);
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+    color: var(--text-primary);
+    overflow: hidden;
+}
+
+.animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(245, 222, 179, 0.15);
+    animation: float 12s infinite ease-in-out;
+}
+.circle:nth-child(1) {
+    width: 180px;
+    height: 180px;
+    top: 15%;
+    left: 20%;
+}
+.circle:nth-child(2) {
+    width: 120px;
+    height: 120px;
+    top: 65%;
+    left: 75%;
+    animation-delay: 4s;
+}
+.circle:nth-child(3) {
+    width: 80px;
+    height: 80px;
+    top: 45%;
+    left: 25%;
+    animation-delay: 8s;
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-40px) scale(1.15); }
+}
+
+.container {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px var(--shadow);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 24px;
+    color: var(--text-primary);
+    margin-bottom: 30px;
+}
+.form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid var(--text-secondary);
+    border-radius: 8px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+.form input:focus {
+    border-color: var(--accent);
+}
+.form button {
+    width: 100%;
+    padding: 12px;
+    background: var(--accent);
+    color: var(--bg-primary);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background 0.3s, transform 0.3s;
+}
+.form button:hover {
+    background: #FFFFFF;
+    transform: scale(1.02);
+}
+.forgot-password {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 20px;
+}
+.forgot-password:hover {
+    color: var(--accent);
+}
+.signup-prompt {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+.signup-prompt a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+.signup-prompt a:hover {
+    text-decoration: underline;
+}
+/* Responsive Design */
+@media (max-width: 576px) {
+    .login-container {
+        padding: 20px;
+        margin: 20px;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
