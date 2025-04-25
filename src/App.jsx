@@ -3,6 +3,7 @@ import "./App.css"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './Screens/Login';
 import Signup from './Screens/Signup';
+import Landingpage from './Screens/Landingpage';
 
 
 
@@ -13,11 +14,8 @@ const App = () => {
     <Routes>
     <Route path="/login" element= {<Login/>}/>
     <Route path="/signup" element= {<Signup/>}/>
-
-
-
-
-
+    <Route path="/" element={<Landingpage />} />
+    
     </Routes>
     </Router>
     

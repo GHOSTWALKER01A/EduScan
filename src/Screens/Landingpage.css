@@ -1,0 +1,246 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    background: #0A2239;
+}
+/* Header: Fixed with Beige Accents */
+header {
+    background: linear-gradient(90deg, #0A2239, #153A66);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 80%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #F5DEB3;
+    letter-spacing: 1px;
+}
+nav a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: #A3BFFA;
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #F5DEB3;
+}
+.header-cta {
+    padding: 10px 25px;
+    background: #F5DEB3;
+    color: #0A2239;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.3s, color 0.3s;
+}
+.header-cta:hover {
+    background: #FFFFFF;
+    color: #153A66;
+}
+/* Hero Section: Diagonal Gradient with Orbit Animation */
+.hero {
+    background: linear-gradient(45deg, #153A66, #0A2239);
+    padding: 150px 50px 100px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+.hero-content {
+    max-width: 600px;
+    z-index: 1;
+    position: relative;
+}
+.hero h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    line-height: 1.2;
+    color: #F5DEB3;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.hero p {
+    font-size: 18px;
+    margin: 0 0 30px;
+    opacity: 0.85;
+    line-height: 1.5;
+}
+.hero-cta {
+    padding: 14px 35px;
+    background: #F5DEB3;
+    color: #0A2239;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s, background 0.3s;
+}
+.hero-cta:hover {
+    transform: scale(1.05);
+    background: #FFFFFF;
+}
+.orbit-bg {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(245, 222, 179, 0.1);
+    animation: orbit 20s infinite linear;
+}
+@keyframes orbit {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* Features Section: Overlapping Cards */
+.features {
+    padding: 80px 50px;
+    background: #0A2239;
+    position: relative;
+}
+.features h2 {
+    text-align: center;
+    font-size: 38px;
+    margin: 0 0 60px;
+    color: #F5DEB3;
+    font-weight: 600;
+}
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.feature-card {
+    background: #153A66;
+    padding: 25px;
+    border-radius: 10px;
+    width: 320px;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.feature-card:nth-child(2) {
+    transform: translateY(20px);
+    z-index: 2;
+}
+.feature-card:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+.feature-card h3 {
+    font-size: 22px;
+    margin: 0 0 15px;
+    color: #F5DEB3;
+}
+.feature-card p {
+    font-size: 15px;
+    color: #A3BFFA;
+    line-height: 1.6;
+}
+/* Benefits Section: Beige Gradient */
+.benefits {
+    padding: 80px 50px;
+    background: linear-gradient(135deg, #F5DEB3, #E6C797);
+    text-align: center;
+}
+.benefits h2 {
+    font-size: 36px;
+    margin: 0 0 40px;
+    color: #0A2239;
+}
+.benefit-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.benefit-item {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    color: #0A2239;
+}
+.benefit-item h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.benefit-item p {
+    font-size: 14px;
+    margin: 0;
+}
+/* Footer: Solid Dark Blue */
+footer {
+    background: #0A2239;
+    padding: 30px 50px;
+    text-align: center;
+    border-top: 2px solid #F5DEB3;
+}
+footer p {
+    margin: 0 0 15px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+.footer-links a {
+    color: #F5DEB3;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+.footer-links a:hover {
+    color: #FFFFFF;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav a {
+        margin: 10px;
+    }
+    .hero {
+        padding: 100px 20px 60px;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .hero p {
+        font-size: 16px;
+    }
+    .orbit-bg {
+        width: 200px;
+        height: 200px;
+        right: 5%;
+    }
+    .features, .benefits {
+        padding: 50px 20px;
+    }
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-card:nth-child(2) {
+        transform: none;
+    }
+    footer {
+        padding: 20px;
+    }
+}
