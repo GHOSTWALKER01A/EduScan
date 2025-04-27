@@ -1,5 +1,8 @@
 import React from 'react'
 import "./Landingpage.css"
+import { Link } from 'react-router-dom'
+import Navbar from '../Components/navbar'
+import Footer from '../Components/Footer'
 
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
 
@@ -7,21 +10,29 @@ import "./Landingpage.css"
 
 
 const Landingpage = () => {
+
+
+
+
+
   return (
    <>
-<header>
+
+   <Navbar/>
+{/* <header>
    <div className="logo">EduScan</div>
    <nav>
     <a href="#">Home</a>
-    <a href="#">Materials</a>
+    <Link to="/materials"><a href="#">Materials</a></Link>
     <a href="#">Schedule</a>
     <a href="#">Attendance</a>
-    <a href="#">Event</a>
+    <a href="#">Events</a>
    </nav>
-</header>
-<a href="#" className="header-cta">Get the App</a>
-  
+   <div className="profile">
+    <img src="profile.svg" alt="" />
+   </div>
 
+</header> */}
     <section className="hero">
         <div className="hero-content">
             <h1>Empower Your Education</h1>
@@ -43,6 +54,14 @@ const Landingpage = () => {
                 <p>Stay on top of your classes with an intuitive schedule manager.</p>
             </div>
             <div className="feature-card">
+                <h3>Events</h3>
+                <p>Where ideas, talent, and passion meet.</p>
+            </div>
+            <div className="feature-card">
+                <h3>Study Materials</h3>
+                <p>Your trusted companion for academic success</p>
+            </div>
+            <div className="feature-card">
                 <h3>Real-Time Updates</h3>
                 <p>Get instant notifications for schedule changes and attendance records.</p>
             </div>
@@ -50,8 +69,9 @@ const Landingpage = () => {
     </section>
 
 
+
     <section className="benefits">
-        <h2>Why LearnSync?</h2>
+        <h2>Why EduScan?</h2>
         <div className="benefit-list">
             <div className="benefit-item">
                 <h3>Time-Saving</h3>
@@ -68,14 +88,15 @@ const Landingpage = () => {
         </div>
     </section>
 
-    <footer>
-        <p>© 2025 LearnSync. All rights reserved.</p>
+    {/* <footer>
+        <p>© 2025 EduScan. All rights reserved.</p>
         <div className="footer-links">
             <a href="#">Privacy</a>
             <a href="#">Terms</a>
             <a href="#">Support</a>
         </div>
-    </footer>
+    </footer> */}
+    <Footer/>
    </>
   )
 }

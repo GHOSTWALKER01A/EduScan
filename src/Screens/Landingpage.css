@@ -4,22 +4,29 @@ body {
     padding: 0;
     color: #FFFFFF;
     background: #0A2239;
+    height: 100%;
+    /* width: 100vw; */
+    overflow-y: auto;
+    box-sizing: border-box;
+    /* overflow-x: auto;  */
 }
-/* Header: Fixed with Beige Accents */
-header {
+
+/* header {
     background: linear-gradient(90deg, #0A2239, #153A66);
-    padding: 20px 50px;
+    padding: 10px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 80%;
+    width: 100%;
     top: 0;
+    left: 0;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
 }
 .logo {
-    font-size: 26px;
+    font-size: 50px;
     font-weight: 700;
     color: #F5DEB3;
     letter-spacing: 1px;
@@ -28,34 +35,28 @@ nav a {
     margin: 0 25px;
     text-decoration: none;
     color: #A3BFFA;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
     transition: color 0.3s ease;
 }
 nav a:hover {
     color: #F5DEB3;
 }
-.header-cta {
-    padding: 10px 25px;
-    background: #F5DEB3;
-    color: #0A2239;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    transition: background 0.3s, color 0.3s;
-}
-.header-cta:hover {
-    background: #FFFFFF;
-    color: #153A66;
-}
-/* Hero Section: Diagonal Gradient with Orbit Animation */
+.profile{
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin: 0px 0px 0px -560px;
+} */
+
 .hero {
     background: linear-gradient(45deg, #153A66, #0A2239);
-    padding: 150px 50px 100px;
+    padding: 150px 100px 100px;
     text-align: left;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 .hero-content {
     max-width: 600px;
@@ -93,6 +94,7 @@ nav a:hover {
 }
 .orbit-bg {
     position: absolute;
+    max-width: 100%;
     top: 50%;
     right: 10%;
     width: 300px;
@@ -105,7 +107,7 @@ nav a:hover {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-/* Features Section: Overlapping Cards */
+
 .features {
     padding: 80px 50px;
     background: #0A2239;
@@ -121,7 +123,7 @@ nav a:hover {
 .feature-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 .feature-card {
@@ -134,10 +136,7 @@ nav a:hover {
     transition: transform 0.3s ease;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
-.feature-card:nth-child(2) {
-    transform: translateY(20px);
-    z-index: 2;
-}
+
 .feature-card:hover {
     transform: translateY(-10px) scale(1.02);
 }
