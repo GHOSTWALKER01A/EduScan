@@ -1,0 +1,50 @@
+.submit-button {
+    padding: 12px 30px;
+    background: var(--accent);
+    color: var(--bg-primary);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+}
+.submit-button:hover {
+    background: #FFFFFF;
+    transform: scale(1.02);
+}
+.doubt-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px -13px;
+    border: 1px solid var(--text-secondary);
+    border-radius: 8px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 16px;
+    outline: none;
+    resize: vertical;
+    min-height: 200px; 
+}
+.doubt-form textarea:focus{
+    border-color: var(--accent); 
+    box-shadow: 0 0 5px var(--accent); 
+}
+.doubt-form input {
+    margin-left: -13px;
+    padding: 12px; 
+    margin: 10px 0; 
+    border: 1px solid var(--text-secondary); 
+    border-radius: 8px; 
+    background: var(--bg-primary); 
+    color: var(--text-primary); 
+    font-size: 16px; 
+    outline: none; 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+.doubt-form input:focus {
+    border-color: var(--accent); 
+    box-shadow: 0 0 5px var(--accent); 
+}

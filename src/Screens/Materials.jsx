@@ -2,6 +2,7 @@ import React from 'react';
 import "./Materials.css";
 import Navbar from '../Components/navbar';
 import Footer from '../Components/Footer';
+import Doubt from '../Components/Doubt';
 
 const Materials = () => {
     return (
@@ -76,7 +77,7 @@ const Materials = () => {
                     </div>
                 </div>
             </div>
-
+            <Doubt/>
             <Footer />
         </>
     );

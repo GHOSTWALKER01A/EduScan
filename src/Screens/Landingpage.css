@@ -11,45 +11,6 @@ body {
     /* overflow-x: auto;  */
 }
 
-/* header {
-    background: linear-gradient(90deg, #0A2239, #153A66);
-    padding: 10px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    box-sizing: border-box;
-}
-.logo {
-    font-size: 50px;
-    font-weight: 700;
-    color: #F5DEB3;
-    letter-spacing: 1px;
-}
-nav a {
-    margin: 0 25px;
-    text-decoration: none;
-    color: #A3BFFA;
-    font-size: 17px;
-    font-weight: 400;
-    transition: color 0.3s ease;
-}
-nav a:hover {
-    color: #F5DEB3;
-}
-.profile{
-    background-color: yellow;
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    margin: 0px 0px 0px -560px;
-} */
-
 .hero {
     background: linear-gradient(45deg, #153A66, #0A2239);
     padding: 150px 100px 100px;
