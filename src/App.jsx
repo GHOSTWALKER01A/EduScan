@@ -12,16 +12,16 @@ import Materials from './Screens/Materials.jsx';
 const App = () => {
   return (
     <>
-    
-    <Router>
-    <Routes>
-    <Route path="/login" element= {<Login/>}/>
-    <Route path="/signup" element= {<Signup/>}/>
-    <Route path="/" element={<Landingpage/>} />
-    <Route path="/materials" element={<Materials/>}/>
-    </Routes>
-    </Router>
-    
+
+      <Router>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/" element={<Landingpage />} />
+          <Route path="/materials" element={<Materials />} />
+        </Routes>
+      </Router>
+
     </>
   )
 }

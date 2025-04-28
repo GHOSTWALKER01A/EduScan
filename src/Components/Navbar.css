@@ -1,56 +1,65 @@
  body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #FFFFFF;
-    background: #0A2239;
-    height: 100%;
-    /* width: 100vw; */
-    overflow-y: auto;
-    box-sizing: border-box;
-    /* overflow-x: auto;  */
-} 
+     font-family: 'Open Sans', sans-serif;
+     margin: 0;
+     padding: 0;
+     color: #FFFFFF;
+     background: #0A2239;
+     height: 100%;
+     /* width: 100vw; */
+     overflow-y: auto;
+     box-sizing: border-box;
+     /* overflow-x: auto;  */
+ }
 
-header {
-    background: linear-gradient(90deg, #0A2239, #153A66);
-    padding: 10px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    box-sizing: border-box;
-}
-.logo {
-    font-size: 50px;
-    font-weight: 700;
-    color: #F5DEB3;
-    letter-spacing: 1px;
-}
-.logo img{
-    height:100px ;
-    width: 100px;
-    position: absolute;
-}
-nav a {
-    margin: 0 25px;
-    text-decoration: none;
-    color: #A3BFFA;
-    font-size: 17px;
-    font-weight: 400;
-    transition: color 0.3s ease;
-}
-nav a:hover {
-    color: #F5DEB3;
-}
-.profile{
-    background-color:#c2b8ff;
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    margin: 0px 0px 0px -500px;
-}
+ header {
+     background: linear-gradient(90deg, #0A2239, #153A66);
+     padding: 10px 40px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: fixed;
+     width: 100%;
+     top: 0;
+     left: 0;
+     z-index: 1000;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+     box-sizing: border-box;
+ }
+
+ .logo {
+     font-size: 50px;
+     font-weight: 700;
+     color: #F5DEB3;
+     letter-spacing: 1px;
+ }
+
+ .logo img {
+     height: 100px;
+     width: 100px;
+     position: absolute;
+     margin-top: -15px;
+ }
+
+ nav a {
+     margin: 0 25px;
+     text-decoration: none;
+     color: #A3BFFA;
+     font-size: 17px;
+     font-weight: 400;
+     transition: color 0.3s ease;
+ }
+
+ nav a:hover {
+     color: #F5DEB3;
+ }
+
+ .profile {
+     background-color: #c2b8ff;
+     height: 50px;
+     width: 50px;
+     border-radius: 50px;
+     margin: 0px 0px 0px -500px;
+ }
+ .profile:hover{
+    cursor: pointer;
+ }
