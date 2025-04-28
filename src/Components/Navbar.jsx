@@ -5,7 +5,9 @@ const Navbar = () => {
   return (
     <>
     <header>
-    <div className="logo">EduScan</div>
+    <div className="logo">EduScan
+        <img src="../src/assets/Logo.png" alt="" />
+    </div>
    <nav>
     <a href="#">Home</a>
     <Link to="/materials"><a href="#">Materials</a></Link>
@@ -13,9 +15,8 @@ const Navbar = () => {
     <a href="#">Attendance</a>
     <a href="#">Events</a>
    </nav>
-   <div className="profile">
-    <img src="profile.svg" alt="" />
-   </div>
+   <img   className="profile" src="../src/assets/profile.png" alt="" />
+   
    </header>
     </>
   )
