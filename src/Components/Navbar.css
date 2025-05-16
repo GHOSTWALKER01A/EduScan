@@ -38,6 +38,7 @@
      width: 100px;
      position: absolute;
      margin-top: -15px;
+     cursor: pointer;
  }
 
  nav a {
