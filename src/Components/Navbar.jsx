@@ -4,20 +4,20 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <>
-    <header>
-    <div className="logo">EduScan
-        <img src="../src/assets/Logo.png" alt="" />
-    </div>
-   <nav>
-    <a href="#">Home</a>
-    <Link to="/materials"><a href="#">Materials</a></Link>
-    <Link to="/schedule"><a href="#">Schedule</a></Link>
-    <Link to="/attendance"><a href="#">Attendance</a></Link>
-    <Link to="/events"><a href="#">Events</a></Link>
-   </nav>
-   <img   className="profile" src="../src/assets/profile.png" alt="" />
-   
-   </header>
+      <header>
+        <div className="logo">EduScan
+          <img src="../src/assets/Logo.png" alt="" />
+        </div>
+          <nav style={{ margin: "0px 0px 0px 351px" }}>
+          <a href="#">Home</a>
+          <Link to="/materials">Materials</Link>
+          <Link to="/schedule">Schedule</Link>
+          <Link to="/attendance">Attendance</Link>
+          <Link to="/events">Events</Link>
+        </nav>
+        <Link to="/profile"><img className="profile" src="../src/assets/profile.png" alt="" /></Link>
+
+      </header>
     </>
   )
 }

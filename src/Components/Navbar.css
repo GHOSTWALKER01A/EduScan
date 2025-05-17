@@ -59,7 +59,7 @@
      height: 50px;
      width: 50px;
      border-radius: 50px;
-     margin: 0px 0px 0px -500px;
+     margin: 0px 0px 0px -100px;
  }
  .profile:hover{
     cursor: pointer;

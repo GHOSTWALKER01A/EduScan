@@ -8,7 +8,7 @@ import Materials from './Screens/Materials.jsx';
 import Schedule from './Screens/Schedule.jsx';
 import Attendance from './Screens/Attendance.jsx';
 import Events from './Screens/Events.jsx';
-
+import Profile from './Screens/Profile.jsx';
 
 const App = () => {
   return (
@@ -23,6 +23,7 @@ const App = () => {
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/attendance" element={<Attendance />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/profile" element={<Profile />} /> 
         </Routes>
       </Router>
 
